@@ -1,0 +1,61 @@
+:root {
+    font-family: 'Space Mono', monospace;
+}
+
+
+body {
+    padding:1em;
+    margin:0;
+}
+
+#title {
+    font-family: 'Space Grotesk', sans-serif;
+    text-align:center;
+    text-decoration: 2px solid black underline;
+    text-underline-offset: 10px;
+}
+
+#description, input, option, textarea, label {
+    font-family: 'Space Mono';
+    font-size: 16px;
+}
+
+#description {
+    text-align:center;
+    padding-top:25px;
+}
+
+h2 {
+    font-weight: bold;
+    text-align:center;
+    color:blue;
+    margin:30px 0;
+}
+
+label {
+    display:block;
+    font-size: 16px;
+    padding: 10px 0;
+    text-align:left;
+}
+
+label label {
+    display:inline;
+}
+
+input[type="submit"]
+{
+    font-weight: bold;
+    background: #000;
+    color:white;
+    padding: 5px 20px;
+}
+
+input[type="checkbox"]
+{
+    vertical-align: middle;
+}
+
+.red {
+    color:red;
+}
