@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>FCC Developers Survey 2022</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&family=Space+Mono&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1 id="title">FreeCodeCamp Developer's Survey 2022</h1>
+        <p id="description">
+            The FCC Developer's survey aims to explore how developers across the world are learning and levelling up their programming skills, what tools they're using and what they want.
+        </p>
+        <h2>--- PLEASE FILL THIS FORM GENUINELY ---</h2>
+        <form id="survey-form">
+            <label for="name" id="name-label">
+                <span class="red">Name:</span>
+                <input type="text" id="name" name="name" placeholder="John Doe" required />
+            </label>
+            <label for="email" id="email-label">
+                <span class="red">Email:</span>
+                <input type="email" id="email" name="email" placeholder="abc@xyz.com" required />
+            </label>
+            <label for="number" id="number-label">
+                <span class="red">Age:</span>
+                <input type="number" id="number" name="number" min="0" max="120" placeholder="16" required />
+            </label>
+            <label for="role">
+                What best describes <span class="red">your current role?</span>
+                <select id="dropdown">
+                    <label for="student">
+                        <option id="student" name="role" value="student">Student</option>
+                    </label>
+                    <label for="full-time">
+                        <option id="full-time" name="role" value="full-time">Full Time Job</option>
+                    </label>
+                    <label for="part-time">
+                        <option id="part-time" name="role" value="part-time">Part Time Job</option>
+                    </label>
+                    <label for="pnts">
+                        <option id="pnts" name="role" value="pnts">Prefer not to say</option>
+                    </label>
+                    <label for="Other">
+                        <option id="other" name="role" value="other">Other</option>
+                    </label>
+                </select>
+            </label>
+            <label for="level">
+                What best describes <span class="red">your current level?</span>
+                <label for="beginner">
+                    <input id="beginner" type="radio" name="level" value="beginner" /> Beginner
+                </label>
+                <label for="intermediate">
+                    <input id="intermediate" type="radio" name="level" value="intermediate" /> Indermediate
+                </label>
+                <label for="advanced">
+                    <input id="advanced" type="radio" name="level" value="advanced" /> Advanced
+                </label>
+            </label>
+            <label for="pl">
+                Which of the following <span class="red">programming languages are you familiar with?</span>
+                <label for="python">
+                    <input id="python" name="pl" value="python" type="checkbox" /> Python
+                </label>
+                <label for="java">
+                    <input id="java" name="pl" value="java" type="checkbox" /> Java
+                </label>
+                <label for="js">
+                    <input id="js" name="pl" value="js" type="checkbox" /> JavaScript
+                </label>
+                <label for="ctype">
+                    <input id="ctype" name="pl" value="ctype" type="checkbox" /> C / C++ / C#
+                </label>
+                <label for="sql">
+                    <input id="sql" name="pl" value="sql" type="checkbox" /> SQL
+                </label>
+            </label>
+            <label for="ide">
+                Which of the following <span class="red">IDE's / text editors are you currently using?</span>
+                <label for="vscode">
+                    <input id="vscode" name="ide" value="vscode" type="checkbox" /> VS Code
+                </label>
+                <label for="atom">
+                    <input id="atom" name="ide" value="atom" type="checkbox" /> Atom
+                </label>
+                <label for="sublime">
+                    <input id="sublime" name="ide" value="sublime" type="checkbox" /> Sublime Text
+                </label>
+                <label for="vim">
+                    <input id="vim" name="ide" value="vim" type="checkbox" /> Vim
+                </label>
+                <label for="emacs">
+                    <input id="emacs" name="ide" value="emacs" type="checkbox" /> Emacs
+                </label>
+                <label for="notepad++">
+                    <input id="notepad++" name="ide" value="notepad++" type="checkbox" /> Notepad++
+                </label>
+            </label>
+            <label for="feedback">
+                Any <span class="red">comments or suggestions?</span>
+                <br>
+                <textarea placeholder="I would like to suggest ..." rows="5" cols="50"></textarea>
+            </label>
+            <input id="submit" type="submit" />
+        </form>
+    </body>
+</html>
